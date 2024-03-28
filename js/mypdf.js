@@ -1,0 +1,1 @@
+window.onload = function() { var pdfObjects = document.getElementsByClassName('pdfObject'); Array.prototype.forEach.call(pdfObjects, function(pdfObject) { var pdfHeight = pdfObject.scrollHeight; if (pdfHeight < window.innerHeight) { pdfObject.style.height = pdfHeight + 'px'; } }); };
