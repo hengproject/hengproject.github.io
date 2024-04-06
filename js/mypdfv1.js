@@ -8,7 +8,7 @@ window.onload = async function() {
     for (let i = 0; i < pdfTags.length; i++) {
         // 获取PDF文件的路径
         let pdfPath = pdfTags[i].getAttribute('src');
-        // console.log(pdfPath);
+        console.log(pdfPath);
 
         // 读取PDF文件
         let loadingTask = pdfjsLib.getDocument(pdfPath);
@@ -16,7 +16,7 @@ window.onload = async function() {
 
         // 获取PDF的总页数
         let totalPages = pdf.numPages;
-        // console.log(totalPages);
+        console.log(totalPages);
 
         for (let j = 1; j <= totalPages; j++) {
             let page = await pdf.getPage(j);
