@@ -38,6 +38,8 @@ window.onload = async function() {
             // 将canvas转换为图像并添加到pdf标签中
             let img = document.createElement('img');
             img.src = canvas.toDataURL();
+            img.style.margin = '0';
+            img.style.padding = '0';
             pdfTags[i].appendChild(img);
         }
     }
